@@ -5,8 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rite-Bites</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
+    <header>
+        <div class="header">
+            <img src="./assets/images/logo.jpg" alt="logo" />
+          </div>
+
+        <form id="search-option">
+            <div class="form-group">
+                <input type="text" name="search-element" placeholder="Keyword" />
+            </div>
+
+            <div>
+                <select name="element-type" class="select-dropdown">
+                    <option value="" disabled selected>Search Type</option>
+                    <option value="Recipes">Recipes</option>
+                    <option value="Food Search">Food Search</option>
+                    <option value="UPC Scan">UPC Scan</option>
+                </select>
+            </div>
+
+            <div>
+                <button class="btn" type="submit">Search</button>
+            </div>
+
+        </form>
+    </header>
     
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

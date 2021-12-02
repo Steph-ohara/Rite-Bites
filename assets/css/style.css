@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header {
+    background: white;
+    padding: 30px 25px;
+    border: 5px solid #638e95;
+    width: 100%;
+}
+
+.header img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background: #555;
+  }
+
+form {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+
+form input {
+    outline: none;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 2.2rem;
+    border: 2px solid black;
+    border-radius: 12px;
+  }
+
+  form .form-group {
+    margin: 10px 6px 10px 0;
+    flex: 1;
+  }
+
+  .btn {
+    outline: none;
+    border: none;
+    display: inline-block;
+    padding: 10px 15px;
+    background: #638e95;
+    font-size: 2.2rem;
+    border-radius: 12px;
+    position: relative;
+    top: -3px;
+    box-shadow: 0 3px;
+  }
+
+  .btn:hover {
+    box-shadow: 0 2px black;
+    top: -2px;
+  }
+  .btn:active {
+    box-shadow: 0 0px black;
+    top: 0;
+  }
+
+.select-dropdown,
+.select-status {
+  display: block;
+  font-size: 2.2rem;
+  color: black;
+  padding: 12px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  border: 2px solid black;
+  border-radius: 12px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-image: url("../images/select-arrow.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+}
+
+.select-status {
+    font-size: 1.4rem;
+    padding: 4px 28px 4px 4px;
+    width: auto;
+  }
+
+  .select-dropdown::-ms-expand,
+.select-status::-ms-expand {
+  display: none;
+}
+
+.select-dropdown:hover,
+.select-status:hover {
+  border-color: #888;
+}
+
+.select-dropdown:focus,
+.select-status:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: black;
+  outline: none;
+}
+.select-dropdown option,
+.select-status option {
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+
+@media screen and (max-width: 980px) {
+   form .form-group {
+     flex: 1 100%;
+   }
+ 
+   form .form-group button {
+     width: 100%;
+   }
+  
+   .task-list-wrapper {
+     flex-basis: 100%;
+ }
+}
