@@ -6,16 +6,16 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
 }
 
 header {
     background: white;
     padding: 30px 25px;
-    border: 5px solid #638e95;
     width: 100%;
 }
 
-.header img {
+.logo img {
     float: left;
     width: 200px;
     height: 200px;
@@ -27,54 +27,61 @@ form {
     align-items: flex-end;
     flex-wrap: wrap;
     position: relative;
-    top: 10px;
-    left: 50px;
+    top: 120px;
+    left: 5px;
 }
 
 form input {
     outline: none;
     border: none;
-    padding: 12px;
-    width: 100%;
-    font-size: 2.2rem;
+    padding: 10px;
+    width: 30%;
+    font-size: 25px;
     border: 2px solid black;
     border-radius: 12px;
-  }
+}
 
-  form .form-group {
+form .form-group {
     margin: 10px 6px 10px 0;
     flex: 1;
-  }
+ }
 
-  .btn {
+.drop-down {
+    margin: 10px 6px 10px 0;
+    flex: 1;
+    padding: 10px;
+}
+
+.btn {
     outline: none;
     border: none;
     display: inline-block;
     padding: 10px 15px;
     background: #638e95;
-    font-size: 2.2rem;
+    font-size: 25px;
     border-radius: 12px;
     position: relative;
     top: -3px;
-    box-shadow: 0 3px;
-  }
+    box-shadow: 0 2px;
+ }
 
-  .btn:hover {
+.btn:hover {
     box-shadow: 0 2px black;
     top: -2px;
-  }
-  .btn:active {
+ }
+
+ .btn:active {
     box-shadow: 0 0px black;
     top: 0;
-  }
+ }
 
 .select-dropdown,
 .select-status {
   display: block;
-  font-size: 2.2rem;
+  font-size: 25px;
   color: black;
-  padding: 12px;
-  width: 100%;
+  padding: 10px;
+  width: 25%;
   max-width: 100%;
   margin: 0;
   border: 2px solid black;
