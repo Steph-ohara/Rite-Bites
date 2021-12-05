@@ -17,11 +17,11 @@
 
         <form id="search-option">
             <div class="form-group">
-                <input type="text" name="search-element" placeholder="Keyword" />
+                <input type="text" id="search-input" name="search-element" placeholder="Keyword" />
             </div>
 
             <div class="drop-down">
-                <select name="element-type" class="select-dropdown">
+                <select id="search-type" name="element-type" class="select-dropdown">
                     <option value="" disabled selected>Search Type</option>
                     <option value="Recipes">Recipes</option>
                     <option value="Food Search">Food Search</option>
@@ -198,5 +198,13 @@
 </html>
     
     <script src="./assets/js/script.js"></script>
+
+    <button id="myButton" class="float-left submit-button" >Home</button>
+
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "www.yoursite.com";
+    };
+</script>
 </body>
 </html>
