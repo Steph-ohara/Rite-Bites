@@ -188,6 +188,10 @@ form .form-group {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+a {
+    color: white;
+}
+
 .recipes {
     width: 100%;
     margin: 0 auto;
