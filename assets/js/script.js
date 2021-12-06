@@ -48,6 +48,16 @@ async function formSubmit(e) {
   }
 }
 
+function displayResults(data) {
+  const results = data.recipes[0];
+  const resultsDiv = document.getElementById("results")
+
+  const recipeNAme = recipe.strRecipe;
+  const heading = document.createElement("h2");
+  heading.innerHTML = recipeNAme;
+  resultsDiv.appendChild(heading);
+}
+
 formEL.onsubmit = formSubmit;
 
 // function formChange(e) {
